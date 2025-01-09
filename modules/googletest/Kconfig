@@ -1,0 +1,10 @@
+config GTEST
+    bool "GoogleTest test framework"
+    select TEST
+    select CPP
+    select REQUIRES_FULL_LIBCPP
+    select FPU
+
+config GMOCK
+    bool "GoogleMock mocking framework"
+    select GTEST
